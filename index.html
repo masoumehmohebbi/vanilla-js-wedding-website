@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding – Website</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://sweetinz.catanisthemes.com/wp-content/themes/sweetinz/images/default/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="loader">
+        <img src="assets/images/loading.gif" alt="Loading..." />
+    </div> 
+
+    <section class="music-website">
+        <div class="music-icon">
+            <i class="fa fa-music" aria-hidden="true"></i>
+        </div>
+
+        <div class="player">
+            <div style="display: flex; justify-content: space-evenly; padding: 0.5rem 1rem;">
+                <div class="player-controls">
+                   <i class="fas fa-play main-button" id="play" title="Play"></i>
+                </div>
+                <div class="music-text-container" style="color: coral; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">
+                    <h2 id="title"></h2>
+                    <h3 id="artist"></h3>
+                </div>
+            </div>
+            
+            <audio src=""></audio>
+            <!-- Progress -->
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="duration-wrapper">
+                    <span id="current-time"></span>
+                    <span id="duration"></span>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="backtotop-container">
+        <a href="#" class="backtotop-inner"><i class="fa fa-angle-up"></i></a>
+    </section>
+
+    <!-- SMenue -->
+    <div class="S_Menue">
+        <a href="#rsvp" id="container-rsvp">
+            <span>R</span>
+            <span>S</span>
+            <span>V</span>
+            <span>P</span>
+        </a>
+        <div class="sMenue-option">
+            <a href="#" target="_blank">
+                <i class="ti-layers-alt"></i>
+                    <span class="container-tooltip tooltipBack_1">
+                        <span class="leadengine-tooltip tooltip_1">View More Demo
+                            <em></em>
+                        </span>      
+                    </span>            
+            </a>
+            <a href="#" target="_blank">
+                <i class="ti-help-alt"></i>
+                    <span class="container-tooltip tooltipBack_2">
+                        <span class="leadengine-tooltip tooltip_2">Submit Support Ticket
+                            <em></em>
+                        </span>      
+                    </span>            
+            </a>
+            <a href="#" target="_blank">
+                <i class="ti-book"></i>
+                    <span class="container-tooltip tooltipBack_3">
+                        <span class="leadengine-tooltip tooltip_3">Read Documentation
+                            <em></em>
+                        </span>      
+                    </span>            
+            </a>
+            <a href="#" target="_blank">
+                <i class="ti-control-forward"></i>
+                    <span class="container-tooltip tooltipBack_4">
+                        <span class="leadengine-tooltip tooltip_4">Watch Video Tutorials
+                            <em></em>
+                        </span>      
+                    </span>            
+            </a>
+            <a href="#" target="_blank">
+                <i class="ti-shopping-cart"></i>
+                    <span class="container-tooltip tooltipBack_5">
+                        <span class="leadengine-tooltip tooltip_5">Buy Sweetinz
+                            <em></em>
+                        </span>      
+                    </span>            
+            </a>
+        </div>
+    </div>
+
+    <header id="home">
+        <section class="mobile-nav">
+            <nav class="navbar">
+                <section class="main-nav-list">
+                    <a href="#home" class="main-nav-link"><span>Home</span></a>
+                    <a href="#ourStory" class="main-nav-link"><span class="item">Our story</span></a>
+                    <a href="#when&where" class="main-nav-link"><span>When & where</span></a>
+                    <a href="#ourGallery" class="main-nav-link"><span>Our Gallery</span></a>
+                    <a href="#bestFriends" class="main-nav-link"><span>Best Friends</span></a>
+                    <a href="#events" class="main-nav-link"><span>Events</span></a>
+                    <a href="#rsvp" class="main-nav-link"><span>RSVP</span></a>
+                </section>
+
+                <div class="navbar-logo">
+                    <a href="#">
+                       <img class="dark_logo" src="assets/images/dark_logo.svg" alt="dark_logo...">
+                       <img class="light_logo" src="assets/images/light_logo.svg" alt="light_logo...">
+                    </a>
+                </div>
+                <div class="nav-list-mobile">
+                    <a href="#" class="nav-link"><span>Home</span></a>
+                    <a href="#" class="nav-link"><span>Our story</span></a>
+                    <a href="#" class="nav-link"><span>When & where</span></a>
+                    <a href="#" class="nav-link"><span>Our Gallery</span></a>
+                    <a href="#" class="nav-link"><span>Best Friends</span></a>
+                    <a href="#" class="nav-link"><span>Events</span></a>
+                    <a href="#" class="nav-link"><span>RSVP</span></a>
+                </div>
+
+                <div class="menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2" style="height: 3px;"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </nav>
+            
+            
+        </section>
+
+        <div class="slideShow-container" style="height: 100vh;">
+            
+            <ul class="ulElem banner-slideShow-ul">
+                <li class="liElem fade">
+                    <img class="banner_img" src="assets/images/green-home1-slider_001.jpg" alt="" style="width: 100%; opacity: 1; background-position: center center; background-size: cover;z-index: 20; visibility: inherit; background-repeat: no-repeat; height: 100vh; object-fit: cover;">
+                    
+                   
+                    <div class="opacity">
+                        <img src="assets/images/line_top.png" alt="flower-line-top" class="flower-line-top">
+                        <img src="assets/images/line_bottom.png" alt="flower-line-bottom" class="flower-line-bottom">
+                    
+                        <div class="caption-first">Kate &amp; Mike</div>
+                        <div class="caption-second">The Wedding Celebration Of</div>
+                    </div>
+                </li>
+                <li class="liElem fade">
+                    <img class="banner_img" src="assets/images/green-home1-slider_002.jpg" alt="" style="width: 100%; opacity: 1; background-position: center center; background-size: cover;z-index: 20; visibility: inherit; background-repeat: no-repeat; height: 100vh; object-fit: cover;">
+                 
+                    <div class="opacity">
+                        <img src="assets/images/line_top.png" alt="flower-line-top" class="flower-line-top">
+                        <img src="assets/images/line_bottom.png" alt="flower-line-bottom" class="flower-line-bottom">
+                    
+                        <div class="caption-first">She Said Yes</div>
+                        <div class="caption-second">We Decide To Live Happily Together</div>
+                    </div>
+                </li>
+                <li class="liElem fade">
+                    <img class="banner_img" src="assets/images/green-home1-slider_003.jpg" alt="" style="width: 100%; opacity: 1; background-position: center center; background-size: cover;z-index: 20; visibility: inherit; background-repeat: no-repeat; height: 100vh; object-fit: cover;">
+                    <div class="opacity" style="width: 100%;">
+                        <img src="assets/images/line_top.png" alt="flower-line-top" class="flower-line-top">
+                        <img src="assets/images/line_bottom.png" alt="flower-line-bottom" class="flower-line-bottom">
+                    
+                        <div class="caption-first">We're Married</div>
+                        <div class="caption-second">My Love For You Is a Journey</div>
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <div class="circle" style="color: transparent;"></div>
+                <div class="circle" style="color: transparent;"></div>
+                <div class="circle" style="color: transparent;"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- <section style="background-color: aqua; width: 100%; height: 100vh;"></section> -->
+
+        <section id="when&where" class="when-where-section">
+
+            <h3 class="whenwhere-title">
+                <span>June 20th, 2023</span>
+            </h3>
+
+            <p class="whenwhere-description">
+                HYATT REGENCY GREENVILLE
+                <br>
+                220 NORTH MAIN STREET
+            </p>
+
+            <div class="countdown-weddingTime">
+                <section>
+                    <div class="day">
+                        <span class="countdown-day"></span>
+                        <span class="countdown-period">day</span>
+                    </div>
+                    <div class="hour">
+                        <span class="countdown-hour"></span>
+                        <span class="countdown-period">HOURS</span>
+                    </div>
+                </section>
+                <div class="minute">
+                    <span class="countdown-minute"></span>
+                    <span class="countdown-period">MINS</span>
+                </div>
+                <div class="second">
+                    <span class="countdown-second"></span>
+                    <span class="countdown-period">SECS</span>
+                </div>
+            </div>
+
+            <div data-animation-type="fadeInUp" data-animation-delay="50" style="animation-duration: 700ms; animation-delay: 50ms;">
+                <img class="Texture-bottom" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-flower.png" alt="Texture bottom">
+            </div>
+  
+        </section>
+
+        <section class="section-one" style="width: 100%">
+            <figure style="overflow: hidden; position: relative; "> 
+                <img width="354" height="369" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-home1-groom.png" class=" attachment-full" alt="" loading="lazy" title="green-home1-groom" style="max-width: 100%; height: auto;vertical-align: top;">
+                <span class="cata-effect cata-effect-sparkle"></span>
+             </figure>
+
+             <figure style="overflow: hidden; position: relative;" class="mikekate">
+                 <img width="177" height="193" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/mike-diana.png" class="image-name attachment-full" alt="" loading="lazy" style="max-width: 100%; height: auto;vertical-align: top;">
+             </figure>
+
+             <figure style="overflow: hidden; position: relative;animation-duration: 700ms;animation-delay: 150ms;" class="animated fadeInRight data-animation-type="fadeInRight" animation-duration: 700ms;animation-delay: 150ms;"> 
+                 <img width="354" height="369" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-home1-bride.png" class=" attachment-full" alt="" loading="lazy" style="max-width: 100%; height: auto;vertical-align: right;">
+                 <span class="cata-effect cata-effect-sparkle"></span>
+             </figure>
+        </section>
+
+        <section class="cata-section cata-section-container-stretch has-animation cata-parallax-bg animated fadeInUp" id="section_w0yfacxy3y" data-prlx-speed="0.1" style="width: 100%; padding-top: 160px; padding-bottom: 160px; margin-bottom: 0px; background-image: url(&quot;http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/background_12.jpg&quot;); background-repeat: no-repeat; background-size: cover; background-position: center center; animation-duration: 700ms;" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="0">
+             <div class="cata-container">
+                 <div class="cata-row cata-columns-gap-30">
+                     <div class="cata-column wpb_column vc_column_container text-left ipad-padding-right-10percent ipad-padding-left-10percent mobile-padding-right-30px mobile-padding-left-30px col-xs-mobile-fullwidth col-sm-6 cata-bg-column-color" id="column_408iei66or" style="padding-top:70px;padding-right:50px;padding-bottom:70px;padding-left:50px;background-color:#f7f7f7;">
+                         <div class="cata-column-wrapper vc-column-innner-wrapper">
+                             <h3 id="title_yugoj" class="heading-title style2 text-center has-animation animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="200" style="animation-duration: 700ms; animation-delay: 200ms;">
+                                 <span>We are Together</span>
+                             </h3>
+                             <div id="cata_empty_space_bkaax" class="cata-empty-space cata-element" style="height: 25px">
+                             </div>
+                             <div id="cata_column_text_yhmrg" class="cata-text-column cata-element cata-body-color has-animation animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="100" style="animation-duration: 700ms; animation-delay: 100ms;">
+                                 <div class="text_wrapper">
+                                     <p style="text-align: center;">Morbi sed magna in neque vestibulum venenatis at eu metus. Mauris bibendum nibh eget justo rhoncus, eget vehicula quam condimentum. Etiam aliquam vehicula lectus, tempor varius libero.</p>
+                                 </div>        
+                             </div>
+                             <div id="cata_button_yd41n2j9dm" class="cata-button cata-btn-center has-animation animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="150" style="animation-duration: 700ms; animation-delay: 150ms;">
+                                         <a class="cata-btn cata-btn-style-flat cata-btn-shape-rounded cata-btn-size-nm" href="http://bit.ly/2w3XjSE" target="_blank" title="JOIN WITH US">JOIN WITH US</a>
+                             </div>
+                         </div>
+                     </div>
+                             <div class="cata-column wpb_column vc_column_container col-xs-mobile-fullwidth col-sm-6" id="column_a2wbzyzk82">
+                                 <div class="cata-column-wrapper vc-column-innner-wrapper"></div>
+                             </div>           
+                 </div> 
+             </div>
+        </section>
+            
+       <section id="ourStory" class="section-ourStory">
+        <h1 class="ourStory-title">Our Story</h1>
+
+        <div class="container-timeline">
+            <div class="timeline">
+            <ul>
+                <li style="background-color: transparent;" class="love-icon_1">
+                <div class="timeline-content timeline-content-image-right" >
+                    <figure> <img width="460" height="270" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/green-story_01.jpg"  alt="" loading="lazy"> </figure>
+                </div>
+                </li>
+                <ol>
+                    <div class="timeline-content timeline-content-right timeline-firstTXT-right">
+                        <div class="content-wrap"><h4>
+                            first time we meet</h4><span class="cata-date">June 20, 2013</span><p class="cata-desc">Proin posuere placerat ipsum, nec feugiat<br>nisl. Nam eget ullamcorper nisi non blandit.<br>Curabitur non bibendum nisi.</p></div>
+                    </div>
+                </ol>
+                <ol style="background-color: transparent;" class="list-style">
+                </ol>
+                <li style="background-color: transparent;" class="love-icon_2">
+                <div class="timeline-content timeline-content-image-left">
+                    <figure> <img width="460" height="300" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/green-story_02.jpg" class="cata-image-img attachment-full" alt="" loading="lazy"> </figure>
+                </div>
+                </li>
+                
+                <ol style="float: left;">
+                    <div class="timeline-content timeline-content-left">
+                        <div class="content-wrap"><h4>We fall in love each other</h4><span class="cata-date">September 25, 2013</span><p class="cata-desc">Proin posuere placerat ipsum, nec feugiat<br>nisl. Nam eget ullamcorper nisi non blandit.<br>Curabitur non bibendum nisi.</p></div>
+                    </div>
+                </ol>
+                <ol style="background-color: transparent; ">
+                <div class="timeline-content">
+                </div>
+                </ol>
+                <li style="background-color: transparent;" class="love-icon_3">
+                    <div class="timeline-content timeline-content-image-right">
+                        <figure> <img width="480" height="270" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/green-story_03.jpg" class="cata-image-img attachment-full" alt="" loading="lazy"> </figure>
+                    </div>
+                </li>
+                <ol class="floatRight">
+                    <div class="timeline-content timeline-content-right timeline-secondTXT-right">
+                        <div class="content-wrap"><h4>He asked?..She said Yes</h4><span class="cata-date">June 20, 2017</span><p class="cata-desc">Proin posuere placerat ipsum, nec feugiat<br>nisl. Nam eget ullamcorper nisi non blandit.<br>Curabitur non bibendum nisi.</p></div>
+                    </div>
+                </ol>
+                <ol style="background-color: transparent;">
+                    <div class="timeline-content">
+                    </div>
+                </ol>
+                <li style="background-color: transparent;" class="love-icon_4">
+                    <div class="timeline-content timeline-content-image-left">
+                        <figure> <img width="480" height="270" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/green-story_04.jpg" class="cata-image-img attachment-full" alt="" loading="lazy"><span class="cata-effect cata-effect-sparkle"></span> </figure>
+                    </div>
+                </li>
+                <ol style="float: left;">
+                    <div class="timeline-content timeline-content-left">
+                        <div class="content-wrap"><h4>The wedding day!</h4><span class="cata-date">November 5, 2018</span><p class="cata-desc">Proin posuere placerat ipsum, nec feugiat<br>nisl. Nam eget ullamcorper nisi non blandit.<br>Curabitur non bibendum nisi.</p></div>
+                    </div>
+                </ol>
+
+            </ul>
+            </div>
+        </div>
+       </section>
+
+       <section id="ourGallery" class="section-bestMoments" style="background-image: url('http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/background_14.jpg');">
+        <h1>Best Moments</h1>
+      
+
+        <div class="slideshow-bestMoments">
+
+            <div class="mySlides-bestMoments">
+                <img width="1170" height="705" class="fade" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-home1-gallery_001.jpg" alt="" loading="lazy">
+                
+            </div>
+
+            <div class="mySlides-bestMoments">
+                <img width="1170" height="705" class="fade" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-home1-gallery_003.jpg" alt="" loading="lazy">
+              
+            </div>
+
+            <div class="mySlides-bestMoments">
+                <img width="1170" height="705" class="fade" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-home1-gallery_002.jpg" alt="" loading="lazy">
+               
+            </div>
+
+            <div class="mySlides-bestMoments">
+                  <img width="1170" height="705" class="fade" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-home1-gallery_004.jpg" alt="" loading="lazy">
+                
+            </div>
+
+        </div>
+        <br>
+
+        <div class="dot-bestMoments-container" style="text-align:center;position: absolute;margin-top: -50px;">
+            <span class="dot-bestMoments"></span> 
+            <span class="dot-bestMoments"></span> 
+            <span class="dot-bestMoments"></span> 
+            <span class="dot-bestMoments"></span> 
+        </div>
+       </section>
+
+       <section class="section-bestFriends" id="bestFriends" style="width: 100%;">
+            <h1>Our Best Friends</h1>
+
+            <div class="container-form">
+            <div class="tabs">
+                    <div class="tab-center">
+                        <div class="groomsMen-tab">&nbsp &nbsp &nbsp GROOMSMEN &nbsp &nbsp &nbsp &nbsp</div>
+                        <div class="brideMaids-tab">&nbsp &nbsp &nbsp &nbsp BRIDEMAIDS &nbsp &nbsp &nbsp &nbsp</div>
+                    </div>
+            </div>
+    
+            <div class="forms">
+                <div class="groomsMen-form">
+                    <div class="groomsMen-photos">
+                        <div class="friend-details">
+                            <img width="250" height="250" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/friends_05.jpg" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                            <h4 class="friend-name">Tim Robinson</h4>
+                            <div class="friend-socialNetworks">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                                <i class="fa-brands fa-vimeo-square"></i>
+                            </div>
+                        </div>
+
+                        <div class="friend-details">
+                            <img width="250" height="250" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/friends_06.jpg" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                            <h4 class="friend-name">Alexander Doe</h4>
+                            <div class="friend-socialNetworks">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                                <i class="fa-brands fa-vimeo-square"></i>
+                            </div>
+                        </div>
+
+                        <div class="friend-details">
+                            <img width="250" height="250" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/friends_07.jpg" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                            <h4 class="friend-nam">Henry Tudor</h4>
+                            <div class="friend-socialNetworks">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                                <i class="fa-brands fa-vimeo-square"></i>
+                            </div>
+                        </div>
+
+                        <div class="friend-details">
+                            <img width="250" height="250" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/friends_08.jpg" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                            <h4 class="friend-name">Johnson Smith</h4>
+                            <div class="friend-socialNetworks">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                                <i class="fa-brands fa-vimeo-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="brideMaids-form">
+                    <div class="brideMaids-photos">
+                        <div class="friend-details">
+                            <img width="250" height="250" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/friends_04.jpg" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                            <h4 class="friend-name">Neil Richard</h4>
+                            <div class="friend-socialNetworks">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                                <i class="fa-brands fa-vimeo-square"></i>
+                            </div>
+                        </div>
+
+                        <div class="friend-details">
+                            <img width="250" height="250" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/friends_01.jpg" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                            <h4 class="friend-name">Noah Morgan</h4>
+                            <div class="friend-socialNetworks">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                                <i class="fa-brands fa-vimeo-square"></i>
+                            </div>
+                        </div>
+
+                        <div class="friend-details">
+                            <img width="250" height="250" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/friends_02.jpg" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                            <h4 class="friend-name">Milo Matthew</h4>
+                            <div class="friend-socialNetworks">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                                <i class="fa-brands fa-vimeo-square"></i>
+                            </div>
+                        </div>
+
+                        <div class="friend-details">
+                            <img width="250" height="250" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/05/friends_03.jpg" alt="" loading="lazy" style="max-width: 100%; height: auto;">
+                            <h4 class="friend-name">Rene Donovan</h4>
+                            <div class="friend-socialNetworks">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                                <i class="fa-brands fa-vimeo-square"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>      
+    
+       </section>
+       
+       <section class="section-textSlider  animated fadeInUp" style="padding: 0;padding-top: 0px; margin-bottom: 0px; background-image: url(&quot;http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/background_15.jpg&quot;); background-repeat: no-repeat; background-size: cover; background-position: center center; animation-duration: 700ms; background-attachment: fixed; width: 100%;" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="0">
+        <div class="selection-overlay" style="opacity:0.6; background-color:#70a076;position: absolute;top: 0;left: 0;height: 100%; width: 100%;"></div>  
+        <div class="container-textSlider" style="padding-bottom: 120px;padding-top: 120px">
+            <p class="slider-text" style="display: block;">
+                This template has so many options so it is extremely customisable - it has been such a breeze using this template and the team @ Catanis are SO helpful and are always very quick in their responses. I can't recommend this template and Catanis enough!
+                <br>
+                <a href="#">Jacqueline</a>
+            </p>
+
+            <p class="slider-text">
+                A beautiful template, amazing support and a fabulous result....what more can you ask for!! This is one of those times when the results exceed your expectations. Thank you Catanis for your creativity, technical skill and patience in creating my website. Would recommend this a thousand times over to everyone!
+                <br>
+                <a href="#">Anjan</a>
+            </p>
+
+            <p class="slider-text">
+                So it's not gonna be easy. It's going to be really hard; we're gonna have to work at this everyday, but I want to do that because I want you. I want all of you, forever, everyday. You and me... everyday.
+                <br>
+                <a href="#">Noah Allie</a>
+            </p>
+
+            <p class="slider-text">
+                The support is amazing. Hands down the best I have ever experienced. Several times I wanted to throw in the towel but they were able to walk me through everything in a incredibly timely fashion.
+                <br>
+                <a href="#">Wishdiver</a>
+            </p>
+
+            <p class="slider-text">
+                I finally understood what true love meant...love meant that you care for another person's happiness more than your own, no matter how painful the choices you face might be.
+                <br>
+                <a href="#">Nicholas Sparks</a>
+            </p>
+        </div>
+        
+      </section>
+
+      <section id="events" class="section-ourEvents" style="-webkit-transition: -webkit-transform .5s;
+      transition: transform .5s";>
+        <h1>From Our Blog</h1>
+
+        <div class="container_cards">
+              <div class="card" width="auto">
+                  <div style="background-image: url(http://sweetinz.catanisthemes.com/wp-content/uploads/2018/03/blog-special_01.jpg); height: 270px;background-size: cover;background-position: center center; background-repeat: no-repeat; width: 100%; ">
+                   <span style="display: flex;justify-content: center; width: 100%; height: 50vh;">
+                    <a class="play-btn" href="#"></a>
+                   </span>
+                  </div>
+                    
+                  <div class="card-body" style="text-align: center;">
+                  <div class="class="card-title animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="200" style="font-size: 0.9rem; animation-duration: 700ms; animation-delay: 200ms;color: #bbb;"> March 8, 2018 <i class="fa fa-heart" style="color: #70A076;"></i> In <a href="#" style="color: #333; text-decoration: none; font-weight: bold;"> Stories</a></div>
+                  <p class="card-text" style="font-size: 1rem; font-weight: 600; text-transform: capitalize; padding-top: 1.1rem; color: #1A1A1A;">Elegant Real Wedding With French Blue Accents</p>
+                  </div>
+              </div>
+              
+              <div class="card" width="auto">
+                  <div style="background-image: url(http://sweetinz.catanisthemes.com/wp-content/uploads/2018/03/blog-special_02.jpg); height: 390px;background-size: cover;background-position: center center; background-repeat: no-repeat; width: 100%; "></div>
+                  
+                  <div class="card-body" style="text-align: center;">
+                  <div class="class="card-title animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="200" style="font-size: 0.9rem; animation-duration: 700ms; animation-delay: 200ms;color: #bbb;"> March 8, 2018 <i class="fa fa-heart" style="color: #70A076;"></i> In <a href="#" style="color: #333; text-decoration: none; font-weight: bold;"> Stories</a></div>
+                  <p class="card-text" style="font-size: 1rem; font-weight: 600; text-transform: capitalize; padding-top: 1.1rem; color: #1A1A1A;">Creating Your Wedding Website With Minted</p>
+                  </div>
+              </div>
+
+              <div class="card third-card" width="auto">    
+                <ul class="ulElem-events">
+                    <li class="liElem-event fade">
+                        <img src="assets/images/blog_03-520x449.jpg" alt="">
+                    </li>
+                    <li class="liElem-event fade">
+                        <img src="assets/images/blog_05-520x449.jpg" alt="">
+                    </li>
+                    <li class="liElem-event fade">
+                        <img src="assets/images/blog_09-520x449.jpg" alt="">
+                    </li>
+                    
+                </ul>
+                <div id="container-event">
+                    <i class='fa fa-chevron-circle-left' style="color: gray; font-size: 25px; margin: 0rem 3rem; cursor: pointer;"></i>          
+                    
+                    <div class="circle-event"></div>
+                    <div class="circle-event"></div>
+                    <div class="circle-event"></div>
+
+                    <i class='fa fa-chevron-circle-right' style="color: gray; font-size: 25px; margin: 0rem 3rem; cursor: pointer;"></i> 
+
+                </div>
+
+                <div class="card-body" style="text-align: center;">
+                <div class="class="card-title animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="200" style="font-size: 0.9rem; animation-duration: 700ms; animation-delay: 200ms;color: #bbb;"> March 8, 2018 <i class="fa fa-heart" style="color: #70A076;"></i> In <a href="#" style="color: #333; text-decoration: none; font-weight: bold;"> Stories</a></div>
+                <p class="card-text" style="font-size: 1rem; font-weight: 600; text-transform: capitalize; padding-top: 1.1rem; color: #1A1A1A;">Elegant Real Wedding With French Blue Accents</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 6rem; text-align: center;">
+          <a href="#" class="btn-viewAll">View All</a>
+        </div>
+              
+      </section>
+    </main>
+
+    <footer id="rsvp" class="footer-joinWhitUs" style="width: 100%; ">
+        <div class="container-rsvp">
+            <div class="rsvp-titles">
+                <h1>Join With Us</h1>
+                <h5>Please reserve before Feb 14th, 2018. Tell us if you're coming</h5>
+            </div>
+    
+            <form action="/#wpcf7-f413-p949-o1" method="post" class="form-rsvp" novalidate="novalidate">
+                <input type="text" class="form-input-name" name="full-name" size="40" aria-required="true" aria-invalid="false" placeholder="Full Name">
+                <input type="email" class="form-input-email" name="your-email" size="40" aria-required="true" aria-invalid="false" placeholder="Email Address">
+                        
+           
+                <div class="numberOfGuests-container" style="cursor: pointer;">
+                    <select name="number_guests" aria-required="true" aria-invalid="false" tabindex="-1" aria-hidden="true" style="cursor: pointer;">
+                        <option  style="cursor: pointer;">Number Of Guests</option>
+                        <option value="One"  style="cursor: pointer;">One</option>
+                        <option value="Two"  style="cursor: pointer;">Two</option>
+                        <option value="Three"  style="cursor: pointer;">Three</option>
+                        <option value="Four"  style="cursor: pointer;">Four</option>
+                        <option value="Five"  style="cursor: pointer;">Five</option>
+                    </select>
+
+                    <select name="guests_attending" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required cata-guests-attending select2-hidden-accessible" aria-required="true" aria-invalid="false" tabindex="-1" aria-hidden="true"  style="cursor: pointer;">
+                        <option  style="cursor: pointer;">What Will You Be Attending</option>
+                        <option value="The Rehearsal Dinner"  style="cursor: pointer;">The Rehearsal Dinner</option>
+                        <option value="The Ceremony"  style="cursor: pointer;">The Ceremony</option>
+                        <option value="The Afterparty"  style="cursor: pointer;">The Afterparty</option>
+                        <option value="All Of The Above"  style="cursor: pointer;">All Of The Above</option>
+                    </select>
+                </div>                  
+                                           
+                            
+                <textarea class="form-textArea" name="your-message" cols="40" rows="7" aria-required="true" aria-invalid="false" placeholder="Message"></textarea>
+                
+                <div class="form-submit-container">
+                        <input type="submit" value="SUBMIT" class="form-submit">
+                </div>
+            </form>
+            
+            
+            <div class="Texture-bottom_form_container" data-animation-type="fadeInUp" data-animation-delay="50" style="animation-duration: 700ms; animation-delay: 50ms">
+                <img class="Texture-bottom_form" src="http://sweetinz.catanisthemes.com/wp-content/uploads/2018/04/green-flower.png" alt="Texture bottom" style="object-fit: cover;">
+            </div>
+
+        </div>
+                
+        
+        <div class="copyright animated fadeInUp" data-animation-type="fadeInUp" data-animation-duration="700" data-animation-delay="200" style="animation-duration: 700ms; animation-delay: 200ms;color: #bbb;">© 2021 <span style="color: #fff;">Sweetinz Theme</span>. Design By <i class="fa fa-heart"></i><span style="color: #fff;"> Catanis</span>. All Rights Reserved.</div>
+        <div class="socialMedia-footer">
+            <i class='ti-facebook' title="FaceBook"></i>
+            <i class="ti-twitter-alt" title="Twitter"></i>
+            <i class="ti-google" title="Google"></i>
+            <i class="ti-instagram" title="Instagram"></i>
+        </div>      
+            
+        </div>
+    </footer>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
